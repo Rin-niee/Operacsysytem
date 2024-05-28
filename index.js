@@ -1,13 +1,13 @@
 const express = require('express');
 const { Pool } = require('pg');
 const cors = require('cors');
-const morgan = require('morgan');
-const debug = require('debug')('app:server');
 const app = express();
-const port = process.env.PORT || 3000;
+const port = 3000;
 
 app.use(cors());
 app.use(express.json());
+const morgan = require('morgan');
+const debug = require('debug')('app:server');
 app.use(morgan('dev'));
 
 // Настройки подключения к базе данных PostgreSQL
@@ -18,6 +18,7 @@ const pool = new Pool({
   password: process.env.DB_PASSWORD || '1548',
   port: process.env.DB_PORT || 5432,
 });
+
 
 // Маршрут для получения данных из базы данных
 app.get('/', async (req, res) => {
@@ -30,6 +31,7 @@ app.get('/', async (req, res) => {
     res.status(500).json({ error: 'Internal Server Error' });
   }
 });
+
 
 app.get('/:id', async (req, res) => {
   const { id } = req.params;
@@ -45,6 +47,7 @@ app.get('/:id', async (req, res) => {
     res.status(500).json({ error: 'Internal Server Error' });
   }
 });
+
 
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
