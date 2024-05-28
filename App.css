@@ -1,0 +1,226 @@
+body {
+  /* border-radius: 110px; */
+  /* border: 1px solid #ffffff; */
+  background-image: url('background.jpg'); /* Выберите нужный вам цвет */
+  margin: 1px;
+  font-family: Arial, sans-serif;
+}
+
+
+
+.product-card {
+  background-color: #f8e9d8;
+  border: 5px solid #f8e9d8; 
+  border-radius: 120px; 
+  padding-right: -10px;
+  padding-left: -10px;
+  padding-top: 40px;
+  padding-bottom: 700px;
+  margin: 16px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.product-image {
+  margin-right: 1100px;
+  border: 5px solid #67c660;
+  max-width: 300px;
+}
+
+.product-name{
+  padding-right: 50px;
+  padding-left: 50px;
+  margin-top: -310px;
+  margin-left: -120px;
+  text-align: center;
+  border: 5px solid #ffffff;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3); /* Добавляет тень */
+  font-size: 10px;
+}
+.product-art-name{
+  padding-right: 80px;
+  padding-left: 80px;
+  margin-top: 18px;
+  margin-left: -470px;
+  text-align: center;
+  border: 5px solid #ffffff;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3); /* Добавляет тень */
+  font-size: 10px;
+}
+.product-art{
+  font-weight: bold;
+  padding-right: 120px;
+  padding-left: 120px;
+  margin-top: -59px;
+  margin-left: 170px;
+  text-align: center;
+  border: 5px solid #ffffff;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3); /* Добавляет тень */
+  font-size: 16px;
+}
+
+
+.rating{
+  border: 5px solid #ffffff;
+  background-color: #ffffff;
+  padding-right: 85px;
+  padding-left: 85px;
+  padding-top: -10px;
+  padding-bottom: -10px;
+  margin-top: 15px;
+  margin-left: -470px;
+  font-size: 10px;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3); 
+}
+
+.product-quantity{
+  font-size: 40px;
+  margin-left: -310px;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  margin-top: -94px;
+  margin-left: 220px;
+}
+
+.counter button {
+  background-color: #a84a3ad8;
+  border-radius: 20px; 
+  border: 1px solid #ffffff; 
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 1px;
+  padding-bottom: 10px;
+  font-size: 1.8em;
+  margin: 22px;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+.counter span {
+  margin-top: -9px;
+  border-radius: 5px; 
+  border: 5px solid #ffffff;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 40px;
+  width: 30px;
+  text-align: center;
+}
+.price {
+  margin-top: -650px;
+  margin-left: 1030px;
+  text-decoration: line-through;
+  /* display: flex;
+  justify-content: center;
+  align-items: baseline; */
+  font-size: 70px;
+}
+
+.dprice{
+  color: red;
+  font-size: 70px;
+  margin-top: -300px;
+  margin-left: 1030px;
+}
+
+.product-description-name{
+  font-weight: bold;
+  padding-right: 640px;
+  padding-left: 640px;
+  margin-top: 20px;
+  margin-left: 0px;
+  text-align: center;
+  background-color: #d4c2b0;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3); /* Добавляет тень */
+  font-size: 13px;
+}
+
+.product-characteristic-name{
+  font-weight: bold;
+  padding-right: 600px;
+  padding-left: 600px;
+  padding-bottom: 1px;
+  padding-top: 1px;
+  margin-top: 20px;
+  margin-left: -5px;
+  text-align: center;
+  background-color: #d4c2b0;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+  font-size: 13px;
+}
+
+.product-description{
+  font-weight: bold;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 20px;
+  margin-left: 45px;
+  text-align: center;
+  border: 5px solid #ffffff;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+  font-size: 16px;
+}
+
+
+.product-characteristic{
+  font-weight: bold;
+  padding-right: 55px;
+  padding-left: 55px;
+  margin-top: 25px;
+  margin-left: -10px;
+  text-align: center;
+  border: 5px solid #ffffff;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+  font-size: 16px;
+}
+
+
+.add-to-cart-button {
+  margin-top: 30px;
+  margin-left: 1040px;
+  padding: 8px 16px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 40px;
+}
+
+.add-to-cart-button:hover {
+  background-color: darkgreen;
+}
+
+.rating_star{
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-top: -60px;
+  margin-left: 170px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+  div {
+    font-size: 45px; /* Размер звездочек */
+  }
+  
+  span {
+    color: gold; /* Цвет заполненной звездочки */
+  }
+  
+  span:nth-of-type(n+6) {
+    color: lightgray; /* Цвет незаполненной звездочки */
+  }
+}
